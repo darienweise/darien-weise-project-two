@@ -1,0 +1,99 @@
+
+// TYPOGRAPHY COLOURS
+
+body {
+   color: $darkest;
+}
+
+h3, h5,
+span.home-span {
+   color: $primary;
+}
+
+h1,
+h2 {
+   color: $secondary;
+}
+
+
+a{
+   color: $lightest;
+   text-decoration: none;
+}
+
+.logo {
+   color: $accent;
+}
+
+li{
+   list-style: none;
+   letter-spacing: 1px;
+}
+
+a {
+   text-decoration: none;
+}
+
+// TYPOGRAPHY FONTS
+.logo {
+   @include serif(3rem,italic,400);
+}
+
+a {
+   @include san-serif(2rem,normal,normal);
+}
+
+h1 {
+   @include san-serif(6.2rem,normal,bold);
+}
+
+h3,
+h2 {
+   @include san-serif(3.5rem,normal,normal);
+}
+
+
+h5 {
+   @include san-serif(1.8rem, normal,300);
+}
+
+p {
+   @include san-serif(2rem,regular,300);
+   letter-spacing: 2px;
+   line-height: 3.2rem;
+}
+
+// HOME PAGE
+
+#home { 
+   span {
+   @include serif(11.12rem, italic,bold);
+   }
+   span {
+      font-size: 9rem;
+   }
+}
+
+// BLOG 
+#blog main {
+   h1 {
+      color: $lightest;
+      font-size: 10rem;
+   }
+   h3 {
+      font-size: 2.5rem;
+   }
+   a,
+   p {
+      font-size: 2rem;
+      margin: 10px 0;
+   }
+   a {
+      color: $darkest;
+      font-weight: 300;
+      line-height: 3rem;
+      h2 {
+         font-size: 2rem;
+      }
+   }
+}

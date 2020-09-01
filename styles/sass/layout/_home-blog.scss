@@ -1,0 +1,40 @@
+.home-blog {
+   background-color: $lightest-blue;
+
+   .blog-cards {
+   @include flex-between;
+   
+   padding: 10px 0;
+      .blog-card1{
+         img {
+            box-shadow: 20px 20px $accent;
+         }
+      }
+      .blog-card2{
+         img {
+            box-shadow: -20px 20px $accent;
+         }
+      }
+   }
+   .img-left,
+   .img-right {
+      position: relative;
+   }
+
+   .img-left {
+      top: -5rem;
+   }
+   .img-right {
+      bottom: -5rem;
+   }
+
+   .text-container2,
+   .text-container1 {
+      max-width: 30vw;
+      position: relative;
+   }
+   .text-container1 {
+      text-align: right;
+      left: 20rem;
+   }
+}

@@ -1,0 +1,22 @@
+.home-contact {
+   height: 100vh;
+   .container{
+      height: 50%;
+      img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   .text {
+      margin-top: 10vh;
+      text-align: center;
+      .wrapper {
+         max-width: 60vw;
+      }
+      p{
+         margin: 15px 0;
+      }
+   }
+   
+}

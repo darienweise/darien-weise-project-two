@@ -1,0 +1,149 @@
+// general styles
+
+// HOME PAGE
+#home {
+   main{
+      border: solid 3px red;
+      margin-top: 20vh;
+      .about {
+         margin: 7.5rem 0;
+         img {
+            box-shadow: -20px 20px $accent;
+         }
+         .container {
+            @include flex-between;
+         }
+         .about-card {
+            max-width: 60%;
+         }
+
+         .img-container {
+            max-width: 30%;
+         }
+      } 
+      
+      .gallery {
+         background-color: $lightest-blue;
+         padding: 100px 0;
+
+         .container {
+            @include flex-between;
+   
+            img {
+               width: 30%;
+               height: auto;
+               object-fit: cover;
+            }
+         }
+      }
+
+      .info-nav {
+         padding: 8.5rem 0;
+         .container {
+            @include flex-between;
+            i {
+               color: $lightest;
+               font-size: 2.5rem;
+               border-radius: 50%;
+               background-color: $accent;
+               padding: 1.3rem;
+               margin: 15px;
+            }
+            h2 {
+               margin: 15px 0;
+            }
+            .card {
+               @include flex-center;
+               margin: 10px 0;
+            }
+         }
+         a {
+            color: $secondary;
+            display: inline;
+            text-align:center;
+         }  
+      }
+   }
+}
+// BLOG PAGE
+#blog main,
+#contact main{
+   @include flex-between;
+
+   .blog-post {
+      max-width: 60vw;
+
+      .blog-img-container,
+      .blog-post-container,
+      footer {
+         position: relative;
+         top: -45vh;
+      }
+      h1 {
+         position: relative;
+         top: -47rem;
+         left: 17rem;
+      }
+      .blog-post-container {
+         margin-top: 8rem;
+         margin: 10rem 5rem 10rem 15rem;
+         p {
+            margin: 3rem 0;
+         }
+         .text {
+            box-shadow: 10px 10px $accent;
+         }
+         .blog-post {
+            position: relative;
+            bottom: -45rem;
+         }
+      }
+      .blog-img-container img {
+         object-fit: cover;
+         position: relative;
+         top: 50%;
+         left: 0;
+         width: 100%;
+         box-shadow: 25px 25px $accent;
+      }
+      form  {
+         height: 20vh;
+      }
+   }
+   aside {
+      text-align: right;
+      max-width: 25vw;
+
+      img {
+         width: 100%;
+      }
+      .container {
+         text-align: left;
+         max-width: 95%;
+
+      }
+      h3{
+         margin: 2rem 0;
+      }
+      ul {
+         margin: 0;
+         padding: 0;
+      }
+      li::before {
+         content: "•";
+         color: $accent;
+         font-size: 30px;
+         margin: 0 2rem 0 0;
+         padding: 0;
+      }
+      
+   }
+}
+// CONTACT PAGE
+#contact {
+   @include flex-between;
+
+   .blog-post {
+      max-width: 60vw;
+   }
+}

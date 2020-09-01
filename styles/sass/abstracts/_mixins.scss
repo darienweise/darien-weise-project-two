@@ -1,0 +1,38 @@
+// FLEXBOX
+@mixin flex-center {
+   display: flex;
+   justify-content: center;
+}
+
+@mixin flex-between {
+   display: flex;
+   justify-content: space-between;
+}
+
+
+@mixin flex-evenly {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+// IMAGES 
+@mixin back-img($back-img) {
+   background-image: $back-img;
+   background-repeat: no-repeat;
+   background-size: 100vw;
+}
+
+// FONTS
+@mixin serif($size,$style,$weight) {
+   font-family: $serif;
+   font-size: $size;
+   font-style: $style;
+   font-weight: $weight;
+}
+
+@mixin san-serif($size, $style,$weight) {
+   font-family: $san-serif;
+   font-size: $size;
+   font-style: $style;
+   font-weight: $weight;
+}

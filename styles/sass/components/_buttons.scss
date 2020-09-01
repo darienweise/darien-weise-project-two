@@ -1,0 +1,6 @@
+button {
+   @include serif(2rem, normal,normal);
+   padding: 10px 5px;
+   background-color: $primary;
+   
+}

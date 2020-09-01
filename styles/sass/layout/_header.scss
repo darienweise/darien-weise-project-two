@@ -1,0 +1,68 @@
+// GENERAL HEADER
+header{
+   nav {
+      padding: 25px 0;
+   }
+   
+   nav,
+   ul {
+      @include flex-between;
+   }
+   
+   li {
+      margin: 0 0 0 5rem;
+   }
+   
+}
+
+// HOME HEADER
+#home header {
+   @include back-img (url(/assets/home-image-1.jpg));
+
+   height: 80vh;
+
+   h1 {
+      top: -30rem;
+      left: 36%;
+      max-width: 50%;
+   }
+
+   h1,
+   span{
+      position: relative;
+   }
+   
+   span {
+      display: flex;
+   }
+
+   img {
+      position: relative;
+      max-width: 42%;
+      top: 20vh;
+   }
+}
+
+
+// --------------------------------------
+// BLOG
+#blog header,
+#contact header{
+   @include back-img (url(/assets/blog-image-1.jpg));
+   
+   height: 80vh;
+   
+   .header-container {
+      @include flex-between;
+
+      .logo {
+         margin-top: 3rem;
+      }
+   }
+   
+}
+
+// CONTACT
+#contact header{
+   @include back-img (url(/assets/contact-image-1.jpg));
+}
